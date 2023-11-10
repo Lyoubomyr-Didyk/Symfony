@@ -1,0 +1,32 @@
+h1,
+h2,
+h3,
+h4,
+p,
+ul {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.section {
+    background: linear-gradient(90deg, hsla(319, 81%, 27%, 1) 0%, hsla(347, 94%, 48%, 1) 100%);
+}
+
+.container {
+    max-width: 1220px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.title {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: aliceblue;
+    border-bottom: solid 1px blanchedalmond;
+}

@@ -9,8 +9,16 @@
 
         {% block javascripts %}
         {% endblock %}
+        <link rel="stylesheet" href="{{ asset('css/style.css')}}" >
     </head>
-    <body>
+    <body class="section">
+
+    <header class="header" >
+            <h1 class="title container">QuackChat</h1>
+    </header>
+
+
+
         {% block body %}{% endblock %}
     </body>
 </html>
