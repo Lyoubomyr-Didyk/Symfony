@@ -7,6 +7,7 @@ ul {
     margin-top: 0;
     margin-bottom: 0;
 }
+
 img {
     display: block;
     max-width: 100%;
@@ -21,6 +22,7 @@ img {
     max-width: 1220px;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 40px;
 }
 
 .title {
@@ -29,4 +31,63 @@ img {
     padding-bottom: 20px;
     color: aliceblue;
     border-bottom: solid 1px blanchedalmond;
+}
+
+.post {
+    margin-bottom: 20px;
+    color: #dbeafe;
+}
+
+.link{
+    text-decoration: none;
+}
+
+.wrapper{
+    margin-right: auto;
+    margin-left: auto;
+    max-width:500px;
+    border: solid 2px #d35119;
+    padding: 15px;
+    margin-bottom: 30px;
+    background-color: rgba(211, 158, 25, 0.29);
+}
+
+.btn {
+    font-family: Inter;
+    font-size: 14px;
+    color: #dbeafe;
+    background-color: #1d7ba6;
+    padding: 5px;
+    border-radius: 5px;
+    border-color: transparent;
+    margin-left: 15px;
+}
+
+.btn:hover{
+    background-color: #da1193;
+}
+
+.post-format{
+    display: flex;
+    align-items: center;
+}
+
+.post-date{
+    font-size: 12px;
+    margin-right: auto;
+}
+
+.create-btn{
+    padding: 12px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-color: #ffffff;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    color: darkblue;
+}
+
+.create-btn:hover{
+    border: solid 2px #f1520d;
+    background-color: transparent;
+    color: #ffffff;
 }

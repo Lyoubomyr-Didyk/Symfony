@@ -81,10 +81,14 @@ Doctrine поддержвивет множество типов полей, ка
 php bin/console debug:router
 
 
+### Cache
+php bin/console cache:clear
 
 
 
+cmd//
 
+didyksdb@gmail.com  = didyk2022
 
 
 

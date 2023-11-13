@@ -2,17 +2,40 @@
 
 {% block title %}Quack index{% endblock %}
 
-{% block body %}
-    <h1>Quack index</h1>
 
-    <table class="table">
+
+{% block body %}
+    <div class="container">
+        <h2 class="title-all">All Quacks</h2>
+
+        {% for quack in quacks %}
+            <div class="wrapper">
+
+                    <div class="post">{{ quack.content }}</div>
+                <div class="post-format">
+                    <p class="post-date">{{ "now"|date('Y-m-d H:i') }}</p>
+                    {# <p>{{ quack.createdAt ? quack.createdAt|date('Y-m-d H:i:s') : '' }}</p>#}
+                    <a class="link btn text-btn" href="{{ path('app_quack_show', {'id': quack.id}) }}">show</a>
+                    <a class="link btn text-btn" href="{{ path('app_quack_edit', {'id': quack.id}) }}">edit</a>
+                </div>
+
+            </div>
+        {% endfor %}
+
+        <a class=" create-btn link" href="{{ path('app_quack_new') }}">Create new</a>
+    </div>
+
+
+
+
+  {#  <table class="table">
         <thead>
-            <tr>
-                <th>Id</th>
-                <th>Content</th>
-                <th>Created_at</th>
-                <th>actions</th>
-            </tr>
+        <tr>
+            <th>Id</th>
+            <th>Content</th>
+            <th>Created_at</th>
+            <th>actions</th>
+        </tr>
         </thead>
         <tbody>
         {% for quack in quacks %}
@@ -33,5 +56,6 @@
         </tbody>
     </table>
 
-    <a href="{{ path('app_quack_new') }}">Create new</a>
+    <a href="{{ path('app_quack_new') }}">Create new</a>#}
+
 {% endblock %}
