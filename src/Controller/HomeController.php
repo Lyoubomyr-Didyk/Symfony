@@ -17,7 +17,9 @@ class HomeController extends AbstractController
     public function homepage(): Response
     {
         return $this->render('home/home.html.twig', [
-            'text' => "is the web pond where every duck can spread their wings and let their voices be heard! So, join the chatter and let the conversations flow like water off a duck's back!"
+            'text' => "est l’étang où chaque canard peut déployer ses ailes et faire entendre sa voix! Alors, rejoignez le bavardage et laissez les conversations couler comme de l’eau sur le dos d’un canard!",
+            'create' => "Créer un compte",
+            'login' => "Se connecter",
         ]);
 
     }

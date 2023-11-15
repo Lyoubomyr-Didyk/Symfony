@@ -21,6 +21,9 @@ class Quack
     #[ORM\Column(type: Types::DATETIME_MUTABLE)]
     private ?\DateTimeInterface $created_at = null;
 
+    /*#[ORM\Column(length: 255, nullable: true)]
+    private ?string $photo = null;*/
+
 
 
     // getter and setter
@@ -52,6 +55,18 @@ class Quack
     public function setCreatedAt(\DateTimeInterface $created_at): static
     {
         $this->created_at = $created_at;
+
+        return $this;
+    }
+
+    public function getPhoto(): ?string
+    {
+        return $this->photo;
+    }
+
+    public function setPhoto(?string $photo): static
+    {
+        $this->photo = $photo;
 
         return $this;
     }

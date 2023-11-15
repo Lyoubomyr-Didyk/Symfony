@@ -3,9 +3,18 @@
 {% block title %}New Quack{% endblock %}
 
 {% block body %}
-    <h1>Create new Quack</h1>
+    <div class="container">
 
-    {{ include('quack/_form.html.twig') }}
+        <div class="create-form-wrapper">
+            <h2 class="title-all">Create new Quack</h2>
+            <div class="create-form">
+                {{ include('quack/_form.html.twig') }}
+            </div>
 
-    <a href="{{ path('app_quack_index') }}">back to list</a>
+        </div>
+
+        <a class="create-btn link" href="{{ path('app_quack_index') }}">Back to list</a>
+
+    </div>
+
 {% endblock %}

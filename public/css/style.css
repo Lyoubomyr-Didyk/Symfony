@@ -22,15 +22,52 @@ img {
     max-width: 1220px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 40px;
+}
+
+
+/* header*/
+
+.header{
+    display: flex;
+    padding: 30px 10px 10px 20px;
+    border-bottom: solid 1px blanchedalmond;
+}
+
+.logo{
+    fill: #1bd71e;
 }
 
 .title {
-    text-align: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
     color: aliceblue;
-    border-bottom: solid 1px blanchedalmond;
+}
+
+/* home page*/
+
+
+.home-page{
+    display: flex;
+    padding-top: 40px;
+}
+
+.sidebar{
+    width: 300px;
+    padding: 10px;
+}
+
+.sidebar a{
+    max-width: 120px;
+    margin-bottom: 20px;
+}
+
+.home-content {
+    text-align: center;
+    color: #dbeafe;
+    padding: 100px 10px 200px 10px;
+    width: 100%;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.5), rgba(46, 47, 66, 0.5)), url(../img/dlake.jpg);
+    background-size: cover;
 }
 
 .post {
@@ -40,6 +77,7 @@ img {
 
 .link{
     text-decoration: none;
+    display: block;
 }
 
 .wrapper{
@@ -79,6 +117,7 @@ img {
 
 .create-btn{
     padding: 12px;
+    max-width: 150px;
     background-color: rgba(255, 255, 255, 0.5);
     border-color: #ffffff;
     border-top-left-radius: 15px;
@@ -91,3 +130,33 @@ img {
     background-color: transparent;
     color: #ffffff;
 }
+
+
+/*create form*/
+
+.create-form-wrapper{
+    display: flex;
+}
+
+.create-form{
+    margin-top: 50px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.custom-photo-class{
+    color: #d35119;
+}
+
+.label{
+    color: #d35119;
+}
+
+
+
+.custom-content-class{
+    height: 80px;
+    width: 500px;
+    margin-bottom: 30px;
+}
+

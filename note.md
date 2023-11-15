@@ -77,6 +77,8 @@ Doctrine поддержвивет множество типов полей, ка
 
 ### Controller
 
+
+
 ### 
 php bin/console debug:router
 
@@ -93,3 +95,24 @@ didyksdb@gmail.com  = didyk2022
 
 
 
+### User 
+php bin/console make:user
+
+
+### Doctrine
+php bin/console make:migration
+php bin/console doctrine:migrations:migrate
+
+
+### Registration
+php bin/console make:registration-form 
+
+
+### Authentication 
+symfony console make:auth
+
+### Firewall
+is your authentication system: the firewall defines which parts of your application are secured and 
+how your users will be able to authenticate.
+
+- toolbar => composer require --dev symfony/profiler-pack

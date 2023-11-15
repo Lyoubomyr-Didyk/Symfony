@@ -3,5 +3,16 @@
 
 
 {% block body %}
-<h2>{{ text }}</h2>
+
+    <div class="container home-page">
+        <aside class="sidebar">
+            <a class="link create-btn" href="{{ path('app_register') }}">{{ create }}</a>
+            <a class="link create-btn" href="{{ path('app_login') }}">{{ login }}</a>
+        </aside>
+
+        <div class="home-content">
+            <h2>{{ text }}</h2>
+        </div>
+    </div>
+
 {% endblock %}

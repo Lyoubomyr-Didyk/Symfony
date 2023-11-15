@@ -12,9 +12,20 @@ class QuackType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options): void
     {
         $builder
-            ->add('content')
-            ->add('created_at')
+            ->add('content', null, [
+                'attr' => ['class' => 'custom-content-class'],
+            ])
+          /* ->add('created_at', null, [
+               'attr' => ['class' => 'custom-created-at-class'],
+           ])*/
+
+            /*->add('photo')*/
+           /* ->add('photo', null, [
+                'attr' => ['class' => 'custom-photo-class'],
+            ])*/
         ;
+
+
     }
 
     public function configureOptions(OptionsResolver $resolver): void
