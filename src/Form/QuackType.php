@@ -13,8 +13,10 @@ class QuackType extends AbstractType
     {
         $builder
             ->add('content', null, [
-                'attr' => ['class' => 'custom-content-class'],
+                'attr' => ['class' => 'content-class'],
             ])
+
+
           /* ->add('created_at', null, [
                'attr' => ['class' => 'custom-created-at-class'],
            ])*/

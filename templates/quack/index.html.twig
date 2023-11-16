@@ -11,12 +11,13 @@
         {% for quack in quacks %}
             <div class="wrapper">
 
-                    <div class="post">{{ quack.content }}</div>
+                <div class="post">{{ quack.content }}</div>
                 <div class="post-format">
                     <p class="post-date">{{ "now"|date('Y-m-d H:i') }}</p>
                     {# <p>{{ quack.createdAt ? quack.createdAt|date('Y-m-d H:i:s') : '' }}</p>#}
                     <a class="link btn text-btn" href="{{ path('app_quack_show', {'id': quack.id}) }}">show</a>
                     <a class="link btn text-btn" href="{{ path('app_quack_edit', {'id': quack.id}) }}">edit</a>
+                    <a class="link btn text-btn" href="{{ path('app_comment', {'id': quack.id}) }}">comments</a>
                 </div>
 
             </div>
